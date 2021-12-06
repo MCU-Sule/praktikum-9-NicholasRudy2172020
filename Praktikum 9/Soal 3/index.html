@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Soal 3</title>
+        <meta name =”author” content="Nicholas_Christopher_Rudy 2172020">
+    </head>
+    <style>
+        div{
+            width: 270px;
+            height: 25px;
+            display: inline-table;
+            border: solid 0.5px;
+        }
+    </style>
+    <body style="text-align: center;">
+        <script>
+            let p= []
+            let obs= parseInt(prompt("minta berapa obstacle?")) //obs = obstacle
+            for (i=0; i<25; i++){
+                document.write("<div id="+ i +">"+ i +"</div>")
+            }   
+             for (j=0; j<obs; j++){
+              let q= Math.floor(Math.random()*24)
+                    document.getElementById(q).style.backgroundColor='brown';
+                    document.getElementById(q).style.color='burlywood';
+                    p.push(q)
+                }
+        </script>
+    </body>
+</html>

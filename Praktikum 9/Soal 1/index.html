@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Soal 1</title>
+        <meta name =”author” content="Nicholas_Christopher_Rudy 2172020">
+    </head>
+    <style>
+        #lingkaran {
+            background-color:slategray;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    </style>
+    <body align='center'>
+        <script>
+            let N= parseInt(prompt("Berapa NxN bola yang ingin dibuat?"));
+            let c= N*N //c = Circle (Lingkaran)
+            let isi=(N*N)+1
+            function p(){
+                for (i=N; i>0; i--) {
+                    isi=isi-1
+                    document.write("<div id='lingkaran'>"+isi+"</div>")
+                }}
+                for (j=N; j>0; j--) {
+                    p();
+                document.write("<br>")}
+        </script>
+    </body>
+</html>
+

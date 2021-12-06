@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Soal 2</title>
+        <meta name =”author” content="Nicholas_Christopher_Rudy 2172020">
+    </head>
+    <style>
+        table{
+            border: solid;
+        }
+        tr{
+            background-color: grey;
+            border: solid;
+        }
+        td{
+            border: solid;
+        }
+    </style>
+    <body>
+        <script>
+        document.write ("<table><tr style='background-color:grey;'><td>Nama</td><td> Warna Kesukaan</td></tr>")
+        let n=[]; //n = name
+        let c=[]; //c = color
+        let m=[]; //m = match
+        let i=0;
+        while (i!="stop") {
+            let p= prompt("Masukkan nama:");
+            if (p=="stop") {
+            break;
+            }
+            else {
+            let q=prompt("Masukkan warna Kesukaan (english):");
+            n.push(p); c.push(q);
+            document.write ("<tr style='background-color:"+c[i]+";'><td>"+n[i]+"</td><td>"+c[i]+"</td></tr>")
+            i++;
+        } 
+        }
+        document.write ("</table>");
+        let r=prompt("Masukkan warna yang ingin dicari:");
+        let s=0;
+        for (let j = 0; j<c.length; j++){
+            if (r==c[j]) {
+            s++ ; m.push(n[j])
+        }
+        }if (s==0){
+        document.write ("Tidak ada yang menyukai warna tersebut");
+        }
+        else {
+        document.write ("Ada "+ s +" orang yang menyukai warna tersebut yaitu "+ m.join(" "));
+        }
+       
+        </script>
+    </body>
+</html>
